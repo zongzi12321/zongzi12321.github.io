@@ -283,9 +283,14 @@
       
         
           
-            <p>使用dir 获得文件夹下所有文件的索引<br>计算欧氏距离，并在变量空间中调用变量就是这样 最后只要把变量导入到xls中就好<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">listing = dir(<span class="string">'01/*.bmp'</span>);</span><br><span class="line"><span class="keyword">for</span> i = <span class="number">1</span>:<span class="number">30</span></span><br><span class="line">    imgName = listing(i).name</span><br><span class="line">    str = [<span class="string">'01/'</span>,imgName];</span><br><span class="line">   </span><br><span class="line">     <span class="function"><span class="keyword">if</span> <span class="title">exist</span><span class="params">(str,<span class="string">'file'</span>)</span></span><br><span class="line">         imgData </span>= imread(str);</span><br><span class="line">          a&#123;i&#125;=test(imgData);</span><br><span class="line">%            pause;</span><br><span class="line">     end</span><br><span class="line">  %获得欧氏距离矩阵查看各个特征值之间的距离</span><br><span class="line">  <span class="keyword">for</span> i=<span class="number">1</span>:size(a,<span class="number">2</span>)</span><br><span class="line">      <span class="keyword">for</span> j=<span class="number">1</span>:size(a,<span class="number">2</span>)</span><br><span class="line">          <span class="function"><span class="keyword">if</span> <span class="title">norm</span><span class="params">(a&#123;i&#125;-a&#123;j&#125;)</span>/200-1&lt;0</span>;</span><br><span class="line">              result(i,j)=<span class="number">1</span>;</span><br><span class="line">          <span class="keyword">else</span></span><br><span class="line">              result(i,j)=<span class="number">0</span>;</span><br><span class="line">          <span class="function">end</span><br><span class="line">        <span class="title">qq</span><span class="params">(i,j)</span></span>=norm(a&#123;i&#125;-a&#123;j&#125;)/<span class="number">200</span>-<span class="number">1</span>;</span><br><span class="line">      end</span><br><span class="line">  end</span><br><span class="line">     </span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
+          使用dir 获得文件夹下所有文件的索引计算欧氏距离，并在变量空间中调用变量就是这样 最后只要把变量导入到xls中就好1234567891011121314151617181920212223listing = dir('01/*.bmp');for i = 1:30    imgName = lis
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/25/test-高亮23333/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -377,8 +382,14 @@
       
         
           
-            
           
+          
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/25/实施中文/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -470,9 +481,15 @@
       
         
           
-            <p>今天，我们去步行街吃披萨，还去打台球，回来的时候顺便<strong>花几分钟</strong>装了个hexo+github，嗯，今天真是个有意义的日子</p>
+          今天，我们去步行街吃披萨，还去打台球，回来的时候顺便花几分钟装了个hexo+github，嗯，今天真是个有意义的日子
 
           
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/25/尼玛可以了/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -564,17 +581,14 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/25/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -666,8 +680,14 @@
       
         
           
-            
           
+          
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2014/12/22/试试看/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
