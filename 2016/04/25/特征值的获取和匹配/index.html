@@ -86,7 +86,7 @@
 <meta property="og:url" content="http://zongzi12321.github.io/2016/04/25/特征值的获取和匹配/index.html">
 <meta property="og:site_name" content="粽子's Blog">
 <meta property="og:description" content="常用的图像特征有颜色特征、纹理特征、形状特征、空间关系特征。">
-<meta property="og:updated_time" content="2016-04-25T10:23:47.755Z">
+<meta property="og:updated_time" content="2016-04-25T10:26:55.890Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="特征值的获取和匹配">
 <meta name="twitter:description" content="常用的图像特征有颜色特征、纹理特征、形状特征、空间关系特征。">
@@ -342,7 +342,7 @@
 <p><strong>非线性特征抽取方法</strong>也是研究的热点之一。“核技巧”最早应用在SVM中，KPCA和KFA是“核技巧”的推广应用。</p>
 <p>核投影方法的基本思想是将原样本空间中的样本通过某种形式（这个某种要靠自己找了…）的非线性映射，变换到一个高维甚至无穷维的空间，并借助于核技巧在新的空间中应用线性的分析方法求解。由于新空间中的线性方向也对应原样本空间的非线性方向，所以基于核的投影分析得出的投影方向也对应原样本空间的非线性方向。 </p>
 <p>核投影方法也有一些弱点：<em>几何意义不明确</em>，无法知道样本在非显式映射后变成了什么分布模式；<em>核函数中参数的选取没有相应选择标准，大多数只能采取经验参数选取</em>；不适合训练样本很多的情况，原因是经过核映射后，样本的维数等于训练样本的个数，如果训练样本数目很大，核映射后的向量维数将会很高，并将遇到计算量上的难题。 </p>
-<p>就应用领域来说，KPCA远没有PCA应用的广泛。如果作为一般性的降维KPCA确实比PCA效果好，特别是特征空间不是一般的欧式空间的时候更为明显。<em>但PCA可以通过大量的自然图片学习一个子空间，但是KPCA做不到。</em> </p>
+<p>就应用领域来说<strong>，KPCA远没有PCA应用的广泛。如果作为一般性的降维KPCA确实比PCA效果好，特别是特征空间不是一般的欧式空间的时候更为明显。*</strong>但PCA可以通过大量的自然图片学习一个子空间，但是KPCA做不到。* </p>
 <p>变换系数特征指先对图像进行Fourier变换、小波变换等，得到的系数后作为特征进行识别。</p>
 
       
